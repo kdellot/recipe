@@ -165,7 +165,89 @@ nav ul {
     margin: 0;
     transition: max-height .5s ease-out;
 }
+nav li {
+    list-style: none;
+    display: block;
+    width: 100%;
+    background-color: #7ABFBF;
+    text-align: center;
+    padding: 10px 0;
+    transition: background-color 1s ease-in-out;
+}
+nav li:hover {
+    background-color: #fff;
+}
+nav a {
+    text-decoration: none;color: #000000;
+}
+nav li:first-child {
+    position: absolute;
+    top: 0;
+    right: 90px;
+    width: 245px;
+    height: 80px;
+    padding: 0;
+    background-color: #EB5428;
+}
+nav li:first-child a {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+nav li:last-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 90px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+}
 nav span a, nav li a {
     color: #000000;
     transition: color 1.5s, background-color 1s ease-in-out, border-radius 1s;
+}
+nav span, nav li:last-child {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+nav span a:hover, nav li:last-child a:hover {
+    color: #fff;background-color: #EB5428;
+    border-radius: 5px;
+}
+nav img {
+    visibility: hidden;
+    width: 0;
+}
+nav button {
+    background-color: #EB5428;
+    border: 2px solid #EB5428;
+    margin-top: 20px;
+}
+nav input#menu-btn {
+    display: none;
+}
+#menu-btn:checked ~ ul {
+    max-height: 600px;
+    z-index: 1;
+}
+div.search {
+    position: absolute;
+    top: 90px;
+    left: 40px;padding-bottom: 40px;
+    display: flex;
+    justify-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.search input {
+    border: 3px solid #EB5428;
+    padding: 1px;
+    width: 280px;
+    height: 50px;
+    margin-top: 20px;
 }
