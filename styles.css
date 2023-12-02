@@ -17,6 +17,8 @@ large 1200px
 no floats
 */
 
+
+/******* beginning stuff**********/
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap');
 
 html {
@@ -49,4 +51,121 @@ main p, dd, dt, .ingredients li, input {
 h1 {
     font-size: 40px;
     margin: 0;
+}
+
+
+/**************** main *****************/
+
+main {
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+}
+h2 {
+    font-size: 30px;
+    text-align: center;
+    margin: 12px;
+}
+main img {
+    width: 100%;
+}
+main p {
+    padding: 0 10px;
+}
+
+
+menu {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.svglinks li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+}
+.svglinks li a {
+    color: #EB5428;
+    text-decoration: none;
+    display: block;
+    transition: color 1s, background-color 2s, border-radius 1s;    
+}
+.svglinks li a:hover {
+    color: #000000;
+    background-color: #7ABFBF;border-radius: 5px;
+}
+dt {
+    font-weight: 700;
+    display: inline-block;
+    text-align: end;
+}
+dd {
+   padding: 0px;
+   margin-left: 5px;
+   display: inline;
+   text-align: left;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding-left: 20px;
+}
+.list dl {
+    height: fit-content;
+    margin: 0;
+}
+
+.ingredients li {
+    padding-bottom: 14px;
+    list-style: square;
+    font-family: 'Montserrat', sans-serif;
+}
+directions {
+    padding-bottom: 0;
+    font-size: 16px;
+}
+.directions ol li {
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+}
+
+
+/*********** navigation ******************/
+
+nav {
+    width: inherit;
+    height: 180px;
+    position: absolute;
+    top: 0;
+}
+nav h2 {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    margin: 0;
+}
+nav label {
+    cursor: pointer;
+    display: inline-block;
+    user-select: none;
+    height: 60px;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+nav ul {
+    overflow: hidden;
+    max-height: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    transition: max-height .5s ease-out;
+}
+nav span a, nav li a {
+    color: #000000;
+    transition: color 1.5s, background-color 1s ease-in-out, border-radius 1s;
 }
