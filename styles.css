@@ -29,6 +29,24 @@ body {
     background-color: #fff;
     margin: 0 auto;
 }
+header {
+    padding-top: 180px;
+    text-align: center;
+}
 header, nav {
     background-color: #F2F2F2;
+}
+aside {
+    background-color: #7ABFBF;
+}
+svg, img {
+    margin: 0 auto;
+}
+main p, dd, dt, .ingredients li, input {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+h1 {
+    font-size: 40px;
+    margin: 0;
 }
