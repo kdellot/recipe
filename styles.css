@@ -18,7 +18,9 @@ no floats
 */
 
 
-/******* beginning stuff**********/
+/******************* beginning stuff*****************/
+
+
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap');
 
 html {
@@ -54,7 +56,7 @@ h1 {
 }
 
 
-/**************** main *****************/
+/************************ main ************************/
 
 main {
     background-color: #F2F2F2;
@@ -251,3 +253,89 @@ div.search {
     height: 50px;
     margin-top: 20px;
 }
+
+/************** sides *******************/
+
+aside {
+    padding-bottom: 10px;
+}
+aside h2 {
+    margin: 0;
+    padding: 10px;
+}
+aside h3 {
+    font-size: 25px;
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0 10px 10px;
+}
+aside img {
+    grid-row: span 3;
+    width: 100%;    
+}
+aside figure {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    grid-template-rows: .25fr .5fr 66px;
+    margin: 10px;
+    transition: background-color 1s linear, color .5s;
+}
+aside figure:hover {
+    background-color: #000000;
+    color: #7ABFBF;
+}
+aside figcaption {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    grid-column: 2;
+    grid-row: 2;
+    height: fit-content;
+    margin-left: 10px;
+}
+aside dt {
+    grid-column: 2;
+    grid-row: 3;
+    display: inline;
+}
+aside dd {
+    display: flex;
+    margin-left: 10px;
+}
+aside dd a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/********************** foot ****************/
+
+footer img {
+    width: 50%;
+    justify-content: center;
+}
+
+footer h2, footer h3 {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    margin: 0;
+}
+footer section p {
+    text-align: center;
+    line-height: 1rem;
+}
+footer ul {
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.footflex {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+
+/******************** viewports************/
