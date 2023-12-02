@@ -339,3 +339,42 @@ footer ul {
 
 
 /******************** viewports************/
+
+@media screen and (min-width: 788px) {
+    body {
+        width: 788px;
+    }
+    h1 {
+        text-align: left;
+        padding-left: 10px;
+    }
+    menu {
+        position: absolute;
+        width: 768px;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    @media screen and (min-width: 1280px) {
+        body {
+            width: 1280px;
+        }
+        h1 {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        menu {
+            display: block;
+            width: fit-content;
+            height: 648px;
+            background-color: #fff;
+            border: 2px solid #EB5428
+        }
+        main {
+            display: block;
+        }
+        main img {
+            width: 35%;
+            margin-left: 130px;
+            margin-right: 0;
+            display: inline;
+        }
