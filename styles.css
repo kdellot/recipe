@@ -338,7 +338,7 @@ footer ul {
 
 
 
-/******************** viewports************/
+/******************** viewports********************/
 
 @media screen and (min-width: 788px) {
     body {
@@ -353,28 +353,84 @@ footer ul {
         width: 768px;
         background-color: rgba(255, 255, 255, 0.5);
     }
-
-    @media screen and (min-width: 1280px) {
-        body {
-            width: 1280px;
-        }
-        h1 {
-            text-align: center;
-            padding-bottom: 10px;
-        }
-        menu {
-            display: block;
-            width: fit-content;
-            height: 648px;
-            background-color: #fff;
-            border: 2px solid #EB5428
-        }
-        main {
-            display: block;
-        }
-        main img {
-            width: 35%;
-            margin-left: 130px;
-            margin-right: 0;
-            display: inline;
-        }
+    #rice {
+        grid: 1 / 1;
+    }
+    #salsa {
+        grid: 1 / 2;
+    }
+    #guac {
+        grid: 2 / 1;
+    }
+    #tortilla {
+        grid: 2 / 2;
+    }
+    nav {
+        background-color: #fff;
+    }
+    nav label {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+    nav ul {
+        overflow: visible;
+        display: flex;
+        padding-top: 40px;
+    }
+    nav li {
+       padding: 0;
+    }
+    nav li:first-child {
+        left: 0;
+        width: 80px;
+        height: 80px;
+    }
+    nav li:last-child {
+        padding-top: 10px;
+    }
+    nav a:hover {
+        background-color: #7ABFBF;
+        color: #fff;
+        border-radius: 5px; 
+    }
+    nav img {
+        visibility: visible;
+        width: 40px;display: block;
+    }
+}
+@media screen and (min-width: 1280px) {
+    body {
+        width: 1280px;
+    }
+    h1 {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    menu {
+        display: block;
+        width: fit-content;
+        height: 648px;
+        background-color: #fff;
+        border: 2px solid #EB5428
+    }
+    main {
+        display: block;
+    }
+    main img {
+        width: 35%;
+        margin-left: 130px;
+        margin-right: 0;
+        display: inline;
+    }
+    nav {
+        height: 80px;
+    }
+    nav ul {
+        width: 80%;
+        margin-top: -50px;
+        margin-left: 100px;
+        justify-content: space-between;
+        padding: 0;
+    }
+}
