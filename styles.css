@@ -1,0 +1,20 @@
+/* colors
+#0D0D0D
+#F2F2F2
+#7ABFBF
+rgba(122, 191, 191, .5)
+#EB5428
+
+font-family: 'Archivo Black', sans-serif;
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Montserrat', sans-serif;
+
+mobile 414px
+med 760px
+large 1200px
+^^all % to size
+
+no floats
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap');
