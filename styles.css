@@ -18,3 +18,17 @@ no floats
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap');
+
+html {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    background-color: rgba(122, 191, 191, .5);
+}
+body {
+    width: 414px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+header, nav {
+    background-color: #F2F2F2;
+}
